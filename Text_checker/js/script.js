@@ -32,12 +32,12 @@ function calculate_sentences() {
     let char = calculate_char();
     let score_h = 0;
     let score = Math.ceil(4.71 * (char / words) + 0.5 * (words / sentences) - 21.43);
-    document.getElementsByClassName('span')[0].innerHTML = score;
+    document.getElementsByClassName('span')[0].innerHTML = Math.max(score, 2);
     console.log("char", char, "words", words);
     console.log("sent", sentences, "score", score);
     if (score <= 5) {
       score_h = (score * 33) / 5;
-      return Math.max(score_h, 4);
+      return Math.max(score_h, 2);
     }
     else if (5 < score && score <= 7) {
       score_h = (score * 50) / 7;
