@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Energy & Relax</title>
+</head>
+<body>
+    
+    <div class="app">
+        <div class="vid-container">
+            <img src="./video/pastel4.jpg" class="img"></img>
+        </div>
+        <div class="player-container">
+            <audio class="song">
+                <source src="./sounds/Epicness.mp3"/>
+            </audio>
+            <img src="./svg/play3.png" alt="play" class="play"></img>
+            <svg class="track-outline"
+                width="253" 
+                height="253" 
+                viewBox="0 0 453 453" 
+                fill="none" 
+                xmlns="http://www.w3.org/2000/svg">
+                <circle 
+                cx="226.5" 
+                cy="226.5" 
+                r="216.5" 
+                stroke="black" 
+                stroke-width="20"/>
+            </svg>
+        </div>
+        <div class="sound-picker">
+            <button data-sound="./sounds/Epicness.mp3" data-video="./video/pastel4.jpg">
+                <img src="./svg/alarmon1.png" alt="sunrise"/>
+            </button>
+            <button data-sound="./sounds/CalmRelaxing.mp3" data-video="./video/relax3.jpg">
+                <img src="./svg/shutdown2.png" alt="sunset"/>
+            </button>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
