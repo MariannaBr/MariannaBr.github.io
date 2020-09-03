@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memos</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+</head>
+<body class="bg-gray-200">
+    <header class="flex items-center justify-between bg-blue-600 rounded-b-lg shadow-xl">
+        <div class="flex justify-start items-center">
+            <div class=" p-4">
+                <img class="h-20" src="pics/diary4.png" alt="">
+            </div>
+            <div>
+                <h1 class="text-6xl text-blue-900 font-bold ">Memos</h1>
+            </div>
+        </div>
+        <div class="flex items-center justify-around">
+            <div class="">
+                <button type="button" class="h-8 mr-8 bg-blue-900 px-3 text-blue-600 font-extrabold rounded-lg hover:bg-blue-200 hover:text-blue-900">Login
+
+                </button>
+            </div>
+            <div>
+                <button type="button" class="hover:text-gray-300 focus:text-white focus:outline-none">
+                    <img class="h-8 w-8 fill-current mr-4" src="pics/menu4.png" alt="">
+                </button>
+            </div>
+        </div>
+    </header>
+    <div>
+        <DayCard :property="property"/> 
+    </div>
+</body>
+</html>
+
+<script>
+    import DayCard from 'build/DayCard.html'
+
+    export default {
+        components: {
+            DayCard
+        },
+    data: () => ({
+        property: {
+            image: 'pics/demo.jpg',
+            headline: "Arriving to Dune de pilat",
+            text: "After 10h of driving we finally saw an ocean. We had a dinner on the beach",
+        }
+    })
+    }
+</script>
