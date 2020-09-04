@@ -29,22 +29,26 @@
             </div>
         </div>
     </header>
-    <div>
-        <DayCard :property="property"/> 
+    <div id="app">
+        <div>
+            <DayCard :property="property"/>
+        </div>
     </div>
 
-    <script>
-        import DayCard from 'build/DayCard.html'
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+         
+        import DayCard from './build/DayCard.html'
     
         export default {
+            name: 'app',
             components: {
                 DayCard
             },
         data: () => ({
             property: {
-                image: 'pics/demo.jpg',
+                image: "pics/demo.jpg",
                 headline: "Arriving to Dune de pilat",
-                text: "After 10h of driving we finally saw an ocean. We had a dinner on the beach",
+                text: "After 10h of driving we finally saw an ocean. We had a dinner on the beach.",
             }
         })
         }

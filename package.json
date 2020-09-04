@@ -1,0 +1,25 @@
+{
+  "name": "MariannaBr.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MariannaBr/MariannaBr.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MariannaBr/MariannaBr.github.io/issues"
+  },
+  "homepage": "https://github.com/MariannaBr/MariannaBr.github.io#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "postcss-cli": "^7.1.2",
+    "tailwindcss": "^1.7.6"
+  }
+}
