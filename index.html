@@ -6,11 +6,16 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="public/build/tailwind.css">
 </head>
+
+
 <body class=" bg-gray-100">
-    <header class="flex bg-pink-300 shadow-xl">
+    <header class="flex bg-pink-300 shadow-xl items-center justify-between">
         <div class="flex items-center">
             <img class="h-12 p-2 mx-2" src="pics/logo4.png" alt="">
             <h1 class=" text-gray-600 text-2xl font-extrabold font-sans">Marianna's Projects</h1>
+        </div>
+        <div>
+            <button class="rounded-lg bg-gray-600 text-sm text-pink-300 font-sans font-bold mr-4 p-1 px-2 hover:bg-gray-500 focus:outline-none">About me</button>
         </div>
     </header>
 
@@ -21,62 +26,54 @@
 
 
     <div class="flex m-4">
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" bg-red-700 pb "></div>
-                <img class="shadow-xl h-48 w-full object-cover" src="pics/MediApp.png" alt="">
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold">Meditation App</h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Simple app for mood boost or relax.
-                    </div>
-                </div>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border mr-10 shadow-xl 
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/meditation-app-mana/');">
+            <div class=" relative pb-48 ">
+                <img class="absolute h-full w-full object-cover" src="pics/MediApp.png" alt="">
             </div>
-        </div>
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" h-40 bg-cover bg-center" style="background-image: url(pics/TextChecker.png)"></div>
-                <!--<img class="shadow-xl h-48 w-full" src="pics/MediApp.png" alt=""> -->
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold">Text checker</h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Check how difficult your text is.
-                    </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Meditation App</h4>
                 </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">For mood boosting or relax.</div>
             </div>
-        </div>
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" h-40 bg-cover bg-center" style="background-image: url(pics/RPS.png)"></div>
-                <!--<img class="shadow-xl h-48 w-full" src="pics/MediApp.png" alt=""> -->
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold">Rock Paper Scissors</h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Try to beat the computer.
-                    </div>
+        </button>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border mr-10 shadow-xl
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/Text_checker/');">
+            <div class=" relative pb-48 ">
+                <img class="absolute h-full w-full object-cover" src="pics/TextChecker.png" alt="">
+            </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Text checker</h4>
                 </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">Check how difficult your text is.</div>
             </div>
-        </div>
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" h-40 bg-cover bg-center" style="background-image: url(pics/Memos.png)"></div>
-                <!--<img class="shadow-xl h-48 w-full" src="pics/MediApp.png" alt=""> -->
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold">Memos</h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Every day happens something positive, put it to your diary.
-                    </div>
+        </button>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border mr-10 shadow-xl
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/Rock Paper Scissors/');">
+            <div class=" relative pb-48 ">
+                <img class="absolute h-full w-full object-cover" src="pics/rps.png" alt="">
+            </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Rock Paper Scissors</h4>
                 </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">Try to beat the computer.</div>
             </div>
-        </div>
+        </button>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/Memos/public/');">
+            <div class=" relative pb-48 bg-blue-900">
+                <img class="absolute h-full w-full object-cover " src="pics/diary4.png" alt="">
+            </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Mega</h4>
+                </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">Make a diary from your pics.</div>
+            </div>
+        </button>
     </div>
 
 
@@ -86,62 +83,54 @@
 
 
     <div class="flex m-4">
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" h-40 bg-cover bg-center" style="background-image: url(pics/logo.jpg)"></div>
-                <!--<img class="shadow-xl h-48 w-full" src="pics/MediApp.png" alt=""> -->
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold"></h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Simple app for mood boost or relax.
-                    </div>
-                </div>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border mr-10 shadow-xl
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/Notebooks/html/Correlation_Menstrual_cycle_resting_HR.html');">
+            <div class=" relative pb-48 ">
+                <img class="absolute h-full w-full object-cover" src="pics/Menst_HR.png" alt="">
             </div>
-        </div>
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" h-40 bg-cover bg-center" style="background-image: url(pics/logo.jpg)"></div>
-                <!--<img class="shadow-xl h-48 w-full" src="pics/MediApp.png" alt=""> -->
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold">Text checker</h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Check how difficult your text is.
-                    </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Correlation between menstrual cycle - HR</h4>
                 </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">A menstrual cycle of a woman affects the resting heart rate.</div>
             </div>
-        </div>
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" h-40 bg-cover bg-center" style="background-image: url(pics/logo.jpg)"></div>
-                <!--<img class="shadow-xl h-48 w-full" src="pics/MediApp.png" alt=""> -->
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold">Rock Paper Scissors</h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Try to beat the computer.
-                    </div>
+        </button>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border mr-10 shadow-xl
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/Notebooks/html/Correlation_Pace_HR.html');">
+            <div class=" relative pb-48 ">
+                <img class="absolute h-full w-full object-cover" src="pics/Pace_HR.png" alt="">
+            </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Correlation betwheen pace - HR</h4>
                 </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">Your running pace determines your average heart rate.</div>
             </div>
-        </div>
-        <div class="w-1/4 h-auto">
-            <div class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl">
-                <div class=" h-40 bg-cover bg-center" style="background-image: url(pics/logo.jpg)"></div>
-                <!--<img class="shadow-xl h-48 w-full" src="pics/MediApp.png" alt=""> -->
-                <div class=" p-4">
-                    <div class=" ">
-                        <h4 class=" text-gray-800 text-sm font-bold">Memos</h4>
-                    </div>
-                    <div class="pt-2 text-xs text-gray-800">
-                        Every day happens something positive, put it to your diary.
-                    </div>
+        </button>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border mr-10 shadow-xl
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/');">
+            <div class=" relative pb-48 ">
+                <img class="absolute h-full w-full object-cover" src="pics/flood.png" alt="">
+            </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Flood - user analysis on game</h4>
                 </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">All analysises on users playing a game.</div>
             </div>
-        </div>
+        </button>
+        <button class=" h-full w-56 object-cover bg-gray-300 overflow-hidden rounded-lg border shadow-xl
+        hover:bg-gray-400 focus:outline-none focus:shadow-outline active:bg-gray-400" onClick="window.open('https://mariannabr.github.io/Notebooks/html/XContest_2019.html');">
+            <div class=" relative pb-48 ">
+                <img class="absolute h-full w-full object-cover" src="pics/XC.png" alt="">
+            </div>
+            <div class=" p-4">
+                <div class=" ">
+                    <h4 class=" text-gray-800 text-sm font-bold text-left">Xcontest - analysis on paragliding platform</h4>
+                </div>
+                <div class="pt-2 text-xs text-gray-800 text-left">How long, where and what do the pilots fly?</div>
+            </div>
+        </button>
     </div>
 
 
