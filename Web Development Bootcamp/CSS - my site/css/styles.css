@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #e3f6f5;
+    margin: 0;
+    width: 200px;
+    height: 200px;
+}
+
+.red-box {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: solid 20px;
+    margin-left: 200px;
+
+
+}
+
+.blue-box {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border: solid 10px;
+    margin-left: 440px;
+}
