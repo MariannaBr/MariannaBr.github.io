@@ -30,10 +30,10 @@ cd MariannaBr.github.io
 Terminal:
 
 npm init -y
-npm install tailwindcss postcss-cli autoprefixer
+npm install tailwindcss postcss postcss-cli autoprefixer
 npx tailwind init
 
-NEw file in main folder:
+New file in main folder:
 
   postcss.config.js
 

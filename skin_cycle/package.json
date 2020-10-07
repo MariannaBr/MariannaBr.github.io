@@ -1,0 +1,22 @@
+{
+  "name": "skin_cycle",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/build/tailwind.css"
+  },
+  "author": "Marianna",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.0.1",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "postcss": "^8.1.1",
+    "postcss-cli": "^8.0.0",
+    "request": "^2.88.2",
+    "tailwindcss": "^1.8.11"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
+}
