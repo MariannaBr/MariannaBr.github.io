@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   future: {
     // removeDeprecatedGapUtilities: true,
@@ -5,8 +6,16 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'flower1': "url('/public/pics/plant6.jpg')",
+      })
+    },
   },
-  variants: {},
-  plugins: [],
+  variants: {
+    backgroundImage: ['responsive'],
+  },
+  plugins: [
+    require('@tailwindcss/ui'),
+  ],
 }
