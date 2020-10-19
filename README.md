@@ -72,3 +72,20 @@ write in head:
 #### Changes in tailwind.config.js:
 
 after changes -> npm run build -> reload editor (ctrl+shift+P -> reload)
+
+
+#### Setting up a new project:
+
+new folder with files in C folder
+terminal (in folder):
+git init
+git add .
+git commit -m "setting u new project"
+
+gitHub:
+create new repositary (same name as the folder of project in C)
+
+terminal:
+git remote add origin ...https link created in gitHub...
+git remote -v
+git push origin master
